@@ -115,5 +115,4 @@ int interactive_mode(info_t *info);
 int delime(char a, char *deli);
 int foraplha(int z);
 int chtoi(char *a);
-int mefree(void **ptr)
 #endif
