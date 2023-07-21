@@ -116,4 +116,15 @@ int delime(char a, char *deli);
 int foraplha(int z);
 int chtoi(char *a);
 
+/* builtin0.c */
+int cd_change(info_t *info);
+int ushelp_(info_t *info);
+int shexit(info_t *info);
+
+/* error2.c */
+char *convert_num(long int num, int base, int flags);
+void gives_error(info_t *info, char *estr);
+int print_dec(int input, int fd);
+void delete_comments(char *buff);
+int _erratois(char *w);
 #endif
