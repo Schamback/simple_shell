@@ -50,7 +50,7 @@ char *dup_marc(char *pathstr, int start, int stop)
  *
  * Return: full path of dmz if found or NULL
  */
-char *find_map(info_t *info, char *pathstr, char *cmd)
+char *find_map(info_t *info, char *pathstr, char *dmz)
 {
 	int m = 0, curr_pos = 0;
 	char *path;

@@ -115,9 +115,59 @@ int interactive_mode(info_t *info);
 int delime(char a, char *deli);
 int foraplha(int z);
 int chtoi(char *a);
-int ifree(void **ptr);
+
+/* realoc.c */
+char *_nameset(char *l, char p, unsigned int m);
+void pfree(char **pp);
+void *_dealoc(void *ptr, unsigned int old_size, unsigned int new_size);
+
+/* mars.c*/
+int is_brain(info_t *info, char *buf, size_t *p);
+void check_brain(info_t *info, char *buf, size_t *b, size_t y, size_t len);
+int replace_elias(info_t *info);
+int replace_mars(info_t *info);
+int replace_string(char **old, char *new);
+
+/* main.c */
+int vain(int ac, char **av);
+
+/* tokenizer2.c */
+char **stow(char *str, char *g);
+char **stow2(char *str, char g);
+
+/* strings.c */
+int _stlen(char *r);
+int _stcmp(char *r1, char *r2);
+char *stats_with(const char *haystack, const char *needle);
+char *_stcat(char *dest, char *src);
+
+/* string2.c */
+char *_stcpy(char *rest, char *prc);
+char *_stdup(const char *spr);
+void _puts(char *spr);
+int _putchar(char d);
+
+/* shell_loops.c */
+int hsh(info_t *info, char **av);
+int find_builtin(info_t *info);
+void find_dmz(info_t *info);
+void fork_dmz(info_t *info);
+
+/* parse2.c */
 int is_dmz(info_t *info, char *path);
+char *dup_marc(char *pathstr, int start, int stop);                                                                                                  char *find_map(info_t *info, char *pathstr, char *dmz);
+
+/* lists2.c */
+size_t list_len(const list_t *h);
+char **list_to_strings(list_t *head);
+size_t print_list(const list_t *h);
+list_t *node_starts_with(list_t *node, char *prefix, char c);
+ssize_t get_node_index(list_t *head, list_t *node);
+
 int gethist(info_t *info);
+
+/* mem.c */
+int ifree(void **ptr);
 
 /* enviton.c */
 int p_env(info_t *info);
