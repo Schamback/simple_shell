@@ -117,9 +117,6 @@ int foraplha(int z);
 int chtoi(char *a);
 int ifree(void **ptr);
 int is_dmz(info_t *info, char *path);
-<<<<<<< HEAD
-	
-=======
 int gethist(info_t *info);
 
 /* enviton.c */
@@ -190,5 +187,4 @@ int print_dec(int input, int fd);
 char *convert_num(long int num, int base, int flags);
 void delete_comments(char *buff);
 
->>>>>>> 52dc20837f382afce4e5a0f2d1fcc02f0958335f
 #endif
