@@ -57,7 +57,7 @@ char *find_map(info_t *info, char *pathstr, char *dmz)
 
 	if (!pathstr)
 		return (NULL);
-	if ((strlen(dmz) > 2) && starts_with(dmz, "./"))
+	if ((strlen(dmz) > 2) && stats_with(dmz, "./"))
 	{
 		if (is_dmz(info, dmz))
 			return (dmz);
@@ -71,7 +71,7 @@ char *find_map(info_t *info, char *pathstr, char *dmz)
 				strcat(path, dmz);
 			else
 			{
-				_strcat(path, "/");
+				_stcat(path, "/");
 				strcat(path, dmz);
 			}
 			if (is_dmz(info, path))
