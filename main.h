@@ -134,6 +134,7 @@ int vain(int ac, char **av);
 /* tokenizer2.c */
 char **stow(char *str, char *g);
 char **stow2(char *str, char g);
+int is_delim(char c, const char *delimiters);
 
 /* strings.c */
 int _stlen(char *r);
