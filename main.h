@@ -115,4 +115,7 @@ int interactive_mode(info_t *info);
 int delime(char a, char *deli);
 int foraplha(int z);
 int chtoi(char *a);
+int ifree(void **ptr);
+int is_dmz(info_t *info, char *path);
+int gethist(info_t *info);	
 #endif
