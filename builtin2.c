@@ -8,7 +8,7 @@
  */
 int gethist(info_t *info)
 {
-	print_list(info->history);
+	print_str(info->history);
 	return (0);
 }
 
@@ -28,7 +28,7 @@ int form_alias(info_t *info, char *str)
 		return (1);
 	w = *g;
 	*g = 0;
-	ter = delete_node_at_index(&(info->alias),
+	ter = delete_at_index(&(info->alias),
 			get_node_index(info->alias, node_start_with(info->alias, str, -1)));
 	*g = w;
 	return (ter);
@@ -108,4 +108,3 @@ int cp_alias(info_t *info)
 	}
 	return (0);
 }
-
