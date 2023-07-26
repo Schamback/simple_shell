@@ -59,7 +59,7 @@ void _puts(char *spr)
 		return;
 	while (spr[i] != '\0')
 	{
-		_putchar(str[i]);
+		_putchar(spr[i]);
 		i++;
 	}
 }
